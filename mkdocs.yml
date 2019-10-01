@@ -1,0 +1,97 @@
+site_name: Catberry框架中文文档
+site_author: AngelNI
+repo_url: https://github.com/AngelNI
+site_url: https://github.com/AngelNI
+site_description: Catberry框架中文文档
+
+theme:
+  language: 'zh'
+  feature:
+    tabs: true
+  name: 'material'
+  palette:
+    primary: 'indigo'
+    accent: 'indigo'
+    font:
+    text: 'Ubuntu'
+    code: 'Ubuntu Mono'
+    include_search_page: false
+    search_index_only: true
+
+page:
+    - Home: index.md
+    - About: about.md
+    - Catberry框架中文文档:
+        -开始: A.md
+        -同构通用应用.md: B.md
+        -流: C.md
+        -储存: D.md
+        -CAT组件: E.md
+        -应用程序结构示例: F.md
+        -路径: G.md
+        -Catberry服务: H.md
+        -Cookie: I.md
+        -模板引擎: J.md
+        -浏览器绑定: K.md
+        -事件总线和诊断: L.md
+        -CLI: M.md
+        -API插件: N.md
+        -插件和工具: O.md
+extra:
+  palette:
+    primary: 'Blue Grey'
+    accent: 'Red'
+
+extra:
+  search:
+    language: 'zh'
+  social:
+    - type: 'github'
+      link: 'https://github.com/AngelNI'
+
+extra_css:
+  - '_static/extra.css'
+
+extra_javascript:
+  - 'https://cdn.jsdelivr.net/gh/ethantw/Han@3.3.0/dist/han.min.js'
+  - '_static/js/extra.js?v=10'
+  - 'https://cdnjs.loli.net/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML'
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+
+  
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: true
+  - def_list
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.progressbar
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: math
+          class: arithmatex
+          format: !!python/name:pymdownx.arithmatex.fence_mathjax_format
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde

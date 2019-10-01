@@ -1,0 +1,845 @@
+
+
+
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Catberry框架中文文档">
+      
+      
+        <link rel="canonical" href="https://github.com/AngelNI/Catberry框架中文文档/I/">
+      
+      
+        <meta name="author" content="AngelNI">
+      
+      
+        <meta name="lang:clipboard.copy" content="复制">
+      
+        <meta name="lang:clipboard.copied" content="已复制">
+      
+        <meta name="lang:search.language" content="zh">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="没有找到符合条件的结果">
+      
+        <meta name="lang:search.result.one" content="找到 1 个符合条件的结果">
+      
+        <meta name="lang:search.result.other" content="# 个符合条件的结果">
+      
+        <meta name="lang:search.tokenizer" content="[\uff0c\u3002]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
+    
+    
+      
+        <title>Catberry 服务 - Catberry框架中文文档</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.0284f74d.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.01803549.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../../_static/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#catberry" tabindex="1" class="md-skip">
+        跳转至
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://github.com/AngelNI" title="Catberry框架中文文档" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Catberry框架中文文档
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Catberry 服务
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            键入以开始搜索
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/AngelNI/" title="前往 Github 仓库" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../.." title="介绍" class="md-tabs__link">
+        介绍
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../A/" title="Catberry框架中文文档" class="md-tabs__link md-tabs__link--active">
+          Catberry框架中文文档
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://github.com/AngelNI" title="Catberry框架中文文档" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Catberry框架中文文档
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/AngelNI/" title="前往 Github 仓库" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="介绍" class="md-nav__link">
+      介绍
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Catberry框架中文文档
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Catberry框架中文文档
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../A/" title="开始" class="md-nav__link">
+      开始
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../B/" title="同构/通用应用" class="md-nav__link">
+      同构/通用应用
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../C/" title="流" class="md-nav__link">
+      流
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../D/" title="前后共享" class="md-nav__link">
+      前后共享
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../E/" title="储存" class="md-nav__link">
+      储存
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../F/" title="CAT-组件" class="md-nav__link">
+      CAT-组件
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../G/" title="应用程序结构示例" class="md-nav__link">
+      应用程序结构示例
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../H/" title="路由" class="md-nav__link">
+      路由
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Catberry 服务
+      </label>
+    
+    <a href="./" title="Catberry 服务" class="md-nav__link md-nav__link--active">
+      Catberry 服务
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">目录</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="定位器服务" class="md-nav__link">
+    定位器服务
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="注册自己的服务" class="md-nav__link">
+    注册自己的服务
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="记录仪" class="md-nav__link">
+    记录仪
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" title="配置" class="md-nav__link">
+    配置
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../J/" title="Cookie" class="md-nav__link">
+      Cookie
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../K/" title="模板引擎" class="md-nav__link">
+      模板引擎
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../L/" title="事件总线和诊断" class="md-nav__link">
+      事件总线和诊断
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../M/" title="CLI" class="md-nav__link">
+      CLI
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../N/" title="API插件" class="md-nav__link">
+      API插件
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../O/" title="插件和工具" class="md-nav__link">
+      插件和工具
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">目录</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="定位器服务" class="md-nav__link">
+    定位器服务
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="注册自己的服务" class="md-nav__link">
+    注册自己的服务
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="记录仪" class="md-nav__link">
+    记录仪
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" title="配置" class="md-nav__link">
+    配置
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/AngelNI/edit/master/docs/Catberry框架中文文档/I.md" title="编辑此页" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="catberry">Catberry 服务<a class="headerlink" href="#catberry" title="Permanent link">&para;</a></h1>
+<p>在Catberry中，每个框架的组件/模块（例如Logger或“通用HTTP（S）请求”）都称为“服务”。</p>
+<p>整个Catberry的体系结构都是使用 <a href="http://en.wikipedia.org/wiki/Service_locator_pattern">Service Locator</a>模式构建的。服务定位器是Catberry的核心组件，用于存储有关每个Catberry组件（服务）的所有信息。在某些其他平台上，它类似于<a href="http://en.wikipedia.org/wiki/Inversion_of_control">IoC</a>容器。因此，例如，如果任何组件依赖于另一个组件，则只需从其构造函数内部的Service Locator对其进行解析即可。如果该依赖关系依赖于另一个依赖关系，则它会执行相同的操作来解析整个依赖关系图。</p>
+<p>例如，每个服务（包括用户定义的服务）都可以要求“记录器”服务来将消息记录到控制台：</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>class Some {
+    constructor(locator) {
+        this._logger = locator.resolve(&#39;logger&#39;);
+    }
+}
+</pre></div>
+</td></tr></table>
+
+<p>当Catberry初始化自身时，它会将其所有服务注册到Service Locator中，但是框架用户还可以注册自己的插件（服务），甚至覆盖现有Catberry服务的实现。</p>
+<p>例如，您可以使用自己喜欢的记录器替换服务定位器中的记录器服务，只需编写一个与 <a href="https://github.com/catberry/catberry/blob/master/docs/index.md#logger">Catberry "logger" 服务</a> 的接口匹配的适配器，然后按如下所示进行注册：</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>const cat = catberry.create();
+cat.locator.registerInstance(&#39;logger&#39;, MyCoolLogger);
+</pre></div>
+</td></tr></table>
+
+<p>要注册自己的服务，请记住，您可能需要在服务器和浏览器环境中使用不同的服务实现。但是在某些情况下，这并不重要。</p>
+<p>在下一部分中了解更多如何使用服务定位器的信息。</p>
+<h2 id="_1">定位器服务<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>Catberry框架的整个架构都基于 <a href="http://en.wikipedia.org/wiki/Service_locator_pattern">定位器模式服务</a>.</p>
+<h2 id="_2">注册自己的服务<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>Catberry应用程序中只有一个服务定位器（单例），并且所有Catberry服务都可以从该定位器解析。服务器上的<code>getMiddleware</code>方法调用或浏览器环境中的<code>startWhenReady</code>方法正在解决所有依赖项。</p>
+<p>在此之前，请随时注册您自己的服务。</p>
+<p>您的Catberry应用程序可能具有<code>./server.js</code>文件，如下所示：</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">catberry</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;catberry&#39;</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">RestApiClient</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;./lib/RestApiClient&#39;</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">express</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;express&#39;</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">config</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;./server-config&#39;</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">cat</span> <span class="o">=</span> <span class="nx">catberry</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span><span class="nx">config</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">express</span><span class="p">();</span>
+
+<span class="c1">// when you have created an instance of the Catberry application</span>
+<span class="c1">// you can register anything you want in the Service Locator.</span>
+<span class="c1">// last &quot;true&quot; value means that the instance of your service is a singleton</span>
+<span class="nx">cat</span><span class="p">.</span><span class="nx">locator</span><span class="p">.</span><span class="nx">register</span><span class="p">(</span><span class="s1">&#39;restApiClient&#39;</span><span class="p">,</span> <span class="nx">RestApiClient</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+
+<span class="c1">// you can register services only before this method below</span>
+<span class="nx">app</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">cat</span><span class="p">.</span><span class="nx">getMiddleware</span><span class="p">());</span>
+<span class="c1">// now Catberry already has initialized the whole infrastructure of services</span>
+<span class="nx">app</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">connect</span><span class="p">.</span><span class="nx">errorHandler</span><span class="p">());</span>
+<span class="nx">http</span>
+    <span class="p">.</span><span class="nx">createServer</span><span class="p">(</span><span class="nx">app</span><span class="p">)</span>
+    <span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="nx">config</span><span class="p">.</span><span class="nx">server</span><span class="p">.</span><span class="nx">port</span> <span class="o">||</span> <span class="mi">3000</span><span class="p">);</span>
+</pre></div>
+</td></tr></table>
+
+<p>另外，对于浏览器环境，您的应用程序可能具有<code>./browser.js</code>文件，如下所示：</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">catberry</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;catberry&#39;</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">RestApiClient</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;./lib/RestApiClient&#39;</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">config</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;./browser-config&#39;</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">cat</span> <span class="o">=</span> <span class="nx">catberry</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span><span class="nx">config</span><span class="p">);</span>
+
+<span class="c1">// when you have created an instance of the Catberry application</span>
+<span class="c1">// you can register anything you want in the Service Locator.</span>
+<span class="c1">// last &quot;true&quot; value means that the instance of your service is a singleton</span>
+<span class="nx">cat</span><span class="p">.</span><span class="nx">locator</span><span class="p">.</span><span class="nx">register</span><span class="p">(</span><span class="s1">&#39;restApiClient&#39;</span><span class="p">,</span> <span class="nx">RestApiClient</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+
+<span class="c1">// you can register services only before this method below:</span>
+<span class="nx">cat</span><span class="p">.</span><span class="nx">startWhenReady</span><span class="p">();</span> <span class="c1">// returns promise</span>
+<span class="c1">// now Catberry has already initialized the entire infrastructure of services</span>
+</pre></div>
+</td></tr></table>
+
+<p>另外，您可以覆盖现有的服务注册，例如Logger：</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>cat.locator.register(&#39;logger&#39;, MyCoolLogger, true);
+</pre></div>
+</td></tr></table>
+
+<p>它注册了logger服务的另一个实现，并且Catberry始终使用每个服务的最后注册的实现。</p>
+<p>您还可以使用<code>resolveAll（）</code>方法访问任何服务的所有注册实现。但是请注意，如果没有使用指定名称的实现，定位器将引发错误。</p>
+<p>每个服务的构造函数都有唯一的参数–服务定位符本身，您可以在其中解析任何其他依赖关系。</p>
+<p><em>请记住，您必须避免循环依赖，它们会导致无限循环。</em></p>
+<p>另请阅读：</p>
+<ul>
+<li><a href="https://github.com/catberry/catberry-locator/blob/master/lib/ServiceLocator.js">定位器界面服务</a></li>
+</ul>
+<p>用户区服务：</p>
+<ul>
+<li><a href="https://github.com/catberry/catberry/blob/master/docs/index.md#logger">记录仪</a></li>
+<li><a href="https://github.com/catberry/catberry/blob/master/docs/index.md#config">配置</a></li>
+<li><a href="https://github.com/catberry/catberry/blob/master/docs/index.md#uhr-universal-https-request">通用HTTP（S）请求</a></li>
+</ul>
+<h2 id="_3">记录仪<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>Catberry的核心不包含记录器服务，但是具有用于实现记录器插件的API。如果为适配器创建适配器，让其订阅Catberry中的几个重要事件，则可以使用所需的任何日志记录器。</p>
+<p>作为实现的示例，在所有CLI提供的项目模板中都有一个<a href="https://github.com/catberry/catberry-logger">stupid console logger</a>。</p>
+<p>请记住，如果您不将任何记录器与Catberry一起使用，则应自行处理<a href="https://nodejs.org/api/process.html#process_event_uncaughtexception">进程“ uncaughtException” </a>和 <a href="https://developer.mozilla.org/en/docs/Web/API/GlobalEventHandlers/onerror">window.onerror</a>，否则应用程序将在服务器上退出，并在出现任何致命错误时停止在浏览器中执行发生。</p>
+<p>如果您有一个由CLI生成的项目，则无需担心，所有致命错误都将由作为Catberry插件附带的默认控制台记录器处理。</p>
+<h2 id="_4">配置<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>Catberry具有在 <a href="https://github.com/catberry/catberry/blob/master/docs/index.md#service-locator">服务定位器</a>中注册为“配置”服务的配置对象。</p>
+<p>如果需要，只需从服务定位器解析<code>配置</code>即可。</p>
+<p>该服务只是传递给<code>catberry.create（）</code>方法的完整配置对象。</p>
+<p>Catberry使用以下参数：</p>
+<ul>
+<li><code>componentsGlob</code> – 用于发现CAT组件的glob表达式可以是字符串数组，也可以只是字符串（默认为<code>['catberry_components / ** / cat-component.json'，'node_modules / * / cat-component.json']）</code>。</li>
+<li><code>storesGlob</code>  –  用于发现储存的glob表达式（默认情况下为<code>** / *s</code>）。</li>
+<li><code>storesDirectory</code> – 包含储存的目录的相对路径（默认为<code>./catberry_stores</code>）。</li>
+<li><code>publicDirectoryPath</code> – 公共目录的路径（默认情况下为<code>./public</code>）。</li>
+<li><code>appBundleFilename</code> – 应用程序的浏览器捆绑文件的名称（默认为<code>app.js</code>）。</li>
+<li><code>externalsBundleFilename</code>  – 外部库（<code>node_modules</code>目录中任何必需的库）的浏览器捆绑文件的名称（默认为<code>externals.js</code>）。</li>
+</ul>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../H/" title="路由" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  上一页
+                </span>
+                路由
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../J/" title="Cookie" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  下一页
+                </span>
+                Cookie
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/AngelNI" class="md-footer-social__link fa fa-github"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.245445c6.js"></script>
+      
+        
+        
+          
+          <script src="../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/ethantw/Han@3.3.0/dist/han.min.js"></script>
+      
+        <script src="../../_static/js/extra.js?v=10"></script>
+      
+        <script src="https://cdnjs.loli.net/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+    
+  </body>
+</html>
